@@ -1,0 +1,45 @@
+/* src/styles/day-picker.css - Updated for a more attractive look */
+
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-caption-font-size: 1rem;
+  /* --- Primary Theme Color (Deep Blue) --- */
+  --rdp-accent-color: #1A4E8A; /* Primary color */
+  --rdp-background-color: #e6f0f8; /* Primary.50 for hover */
+  /* --- Selected Day --- */
+  --rdp-selected-color: #fff; /* White text on selected day */
+  /* --- Navigation --- */
+  --rdp-nav-button-color: #2D3748; /* Chakra's gray.700 */
+  margin: 1em 0;
+}
+
+.rdp-caption_label {
+    font-weight: 600;
+    color: #2D3748; /* Chakra's gray.700 */
+}
+
+.rdp-head_cell {
+    color: #718096; /* Chakra's gray.500 */
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+/* Style for the day that is selected */
+.rdp-day_selected,
+.rdp-day_selected:hover {
+  background-color: var(--rdp-accent-color);
+  color: var(--rdp-selected-color);
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/* Style for today's date */
+.rdp-day_today {
+  font-weight: bold;
+  color: var(--rdp-accent-color);
+}
+
+/* Dim disabled/outside days */
+.rdp-day_disabled, .rdp-day_outside {
+  opacity: 0.4;
+}
