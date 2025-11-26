@@ -37,7 +37,7 @@ import {
   FaCalendarAlt,
   FaArrowLeft,
 } from "react-icons/fa";
-import { useCompare } from '../context/CompareContext';
+import { useCompare } from '../context/compareContext';
 import VisitRequestForm from './VisitRequestForm';
 import { buttonProps } from '../theme/ui';
 

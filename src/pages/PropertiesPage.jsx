@@ -25,7 +25,7 @@ import { SearchIcon, ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 import PropertyCard from '../components/PropertyCard';
 import useDebounce from '../hooks/useDebounce';
 import { buttonProps } from '../theme/ui';
-import { useCompare } from '../context/CompareContext';
+import { useCompare } from '../context/compareContext';
 import axios from '../api/axiosInstance';
 
 //const API_BASE_URL = import.meta.env.VITE_API_URL;

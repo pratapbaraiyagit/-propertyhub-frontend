@@ -10,7 +10,7 @@ import {
   FaBuilding, FaTags, FaMapMarkerAlt, FaCalendarAlt, FaBath
 } from 'react-icons/fa';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
-import { useCompare } from '../context/CompareContext';
+import { useCompare } from '../context/compareContext';
 import axios from '../api/axiosInstance';
 
 

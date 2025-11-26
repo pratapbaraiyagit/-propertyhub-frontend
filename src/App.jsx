@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 // Removed Box, Flex from here as layouts handle them
 import { AuthProvider, useAuth } from './context/AuthContext';
-import { CompareProvider, useCompare } from './context/CompareContext'; 
+import { CompareProvider, useCompare } from './context/compareContext'; 
 
 // Layouts
 import UserLayout from './components/layout/UserLayout'; // Import UserLayout
