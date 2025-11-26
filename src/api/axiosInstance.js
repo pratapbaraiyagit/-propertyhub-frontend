@@ -1,7 +1,8 @@
 // src/api/axiosInstance.js
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+// Get API URL and remove trailing slash if present
+const API_BASE_URL = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || 'http://localhost:8080/api';
 const axiosInstance = axios.create({
     // baseURL: 'http://localhost:8080/api',
     baseURL: API_BASE_URL,
